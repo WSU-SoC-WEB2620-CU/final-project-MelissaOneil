@@ -16,6 +16,11 @@ window.onload = function() {
   
   // Handle form submission
     document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+        //confirm with the user that they want to email the form
+        if (!confirm('This will send an email to the Bride with your RSVP information, do you want to proceed?')) {
+            event.preventDefault();
+            return;
+        }
         event.preventDefault();
         emailjs.sendForm("service_iibogi8", "template_87zfy43", this)
             .then(() => {
