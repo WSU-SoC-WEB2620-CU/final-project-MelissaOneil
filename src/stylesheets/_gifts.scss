@@ -9,11 +9,35 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
+    .gifts-box-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
     .short-bar {
         @include line-break;
-        width: 40%;        
+        width: 40%;
     }
-    .btn {
-        @include buttonStyle;
+
+    .venmobtn {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: $dk-green;
+        color: $primary; 
+        border-radius: 8px;
+
+        // Add some hover effect
+        &:hover {
+            background-color: $info; // Darker color on hover
+            text-decoration: none; // Remove underline on hover
+        }
+
+        a {
+            color: $primary;
+            text-decoration: none;
+            font-size: 1rem;
+        }
     }
 }

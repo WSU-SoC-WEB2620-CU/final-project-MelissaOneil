@@ -10,10 +10,10 @@
     grid-template-columns: repeat(6, 4fr);
 
     grid-template-areas:
-        "img1 img1 img2 img2 img3 img3"
-        "img9 img11 img16 img17 img29 img32"
         "img4 img4 img5 img5 img6 img6"
+        "img9 img11 img16 img17 img29 img32"
         "img7 img7 img7 img8 img8 img8"
+        "img1 img1 img2 img2 img3 img3"
         "img10 img12 img12 img12 img12 img12"
         "img20 img12 img12 img12 img12 img12"
         "img36 img12 img12 img12 img12 img12"
@@ -22,9 +22,9 @@
         "img34 img34 img37 img37 img27 img27"
         "img19 img19 img37 img37 img27 img27"
         "img19 img19 img35 img35 img30 img30"
-        "img23 img23 img35 img35 img30 img30"        
+        "img23 img23 img35 img35 img30 img30"
         "img25 img25 img35 img35 img30 img30"
-        "img25 img25 img39 img39 img24 img24"        
+        "img25 img25 img39 img39 img24 img24"
         "img22 img22 img28 img38 img24 img24"
         "img31 img31 img31 img33 img33 img33"
         "img31 img31 img31 img26 img26 img26"
@@ -38,7 +38,7 @@
         height: 100%;
         background-size: cover;
         background-position: center;
-        border-radius: .5rem;        
+        border-radius: .5rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 }

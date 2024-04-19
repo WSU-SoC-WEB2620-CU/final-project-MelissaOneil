@@ -34,18 +34,26 @@ $dk-green: #4A551B;
   width: 13rem;
   padding-top: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: $info; // Darker color on hover
+    text-decoration: none; // Remove underline on hover
+  }
 }
+
 @mixin main-box-style {
   font-family: 'LindenHill';
   box-sizing: border-box;
   border: 11px solid #C7A0A2;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
   border-radius: 7px;
   padding: 40px;
   margin: 0 auto;
-  width: 70%;  
+  width: 70%;
   align-items: center;
 }
+
 @mixin line-break {
   width: 40%;
   height: 3px;
@@ -55,7 +63,9 @@ $dk-green: #4A551B;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
 }
+
 @mixin row-style {
   display: flex;
   justify-content: center;
@@ -73,16 +83,18 @@ body {
   padding: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-nav {  
+
+nav {
   border-bottom: 2px solid $info;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem;  
+  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   .nav-link {
     font-size: 1.3rem;
+
     &:hover {
       color: $info;
     }
@@ -95,7 +107,7 @@ nav {
   }
 }
 
-footer{  
+footer {
   border-top: 2px solid $info;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 
