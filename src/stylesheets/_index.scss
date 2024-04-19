@@ -45,13 +45,16 @@
 
 // small screens
 @media only screen and (max-width: 600px) {
+    .home-box {
+        width: 100%;
+    }
 
     .home-box-row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 0;
         padding: 10px;
     }
 

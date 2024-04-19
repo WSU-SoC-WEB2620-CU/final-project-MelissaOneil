@@ -14,45 +14,61 @@
         padding-left: 0;
         padding-right: 0;
     }
+
     .col.container {
         width: 100%;
         display: flex;
-        justify-content: center; /* Center the image horizontally */
-        align-items: center; /* Center the image vertically */
+        justify-content: center;
+        /* Center the image horizontally */
+        align-items: center;
+
+        /* Center the image vertically */
         img {
             width: 100%;
-            height: auto; 
-            display: block; 
+            height: auto;
+            display: block;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-      }
-      
+    }
 
     .long-bar {
         @include line-break;
-        width: 70%;        
+        width: 70%;
     }
+
     .short-bar {
         @include line-break;
-        width: 40%;        
+        width: 40%;
     }
+
     .btn {
         @include buttonStyle;
     }
-    h1{
+
+    h1 {
         font-size: 3.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 3rem;
     }
-    h3{
+
+    h3 {
         font-size: 2.5rem;
     }
-    h4{
+
+    h4 {
         font-size: 2rem;
     }
-    a{
+
+    a {
         text-decoration: none;
     }
+}
+@media only screen and (max-width: 600px) {
+    .venue-box {
+        width: 100%;
+    }
+    
 }

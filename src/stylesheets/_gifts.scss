@@ -11,9 +11,24 @@
 
     .gifts-box-row {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 10px;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    a{
+        text-decoration: none;
     }
 
     .short-bar {
@@ -40,4 +55,10 @@
             font-size: 1rem;
         }
     }
+}
+@media only screen and (max-width: 600px) {
+    .gifts-box {
+        width: 100%;
+    }
+    
 }
