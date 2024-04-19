@@ -1,0 +1,19 @@
+.gifts-box {
+    @include main-box-style;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .short-bar {
+        @include line-break;
+        width: 40%;        
+    }
+    .btn {
+        @include buttonStyle;
+    }
+}

@@ -25,6 +25,7 @@
     "vite": "^2.9.18"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",

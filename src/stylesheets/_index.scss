@@ -1,0 +1,92 @@
+#coupleImg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Horizontal offset, Vertical offset, Blur radius, Color */
+}
+
+.home-box {
+    @include main-box-style;
+
+    .home-box-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 8rem;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 6rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .hr {
+        @include line-break;
+        width: 60%;
+    }
+
+    .btn {
+        @include buttonStyle;
+    }
+}
+
+// small screens
+@media only screen and (max-width: 600px) {
+
+    .home-box-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 8rem;
+        padding-bottom: 10px;
+    }
+    
+
+    h2 {
+        font-size: 6rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    #bigDay{
+        font-size: 4rem;
+    }
+
+    .home-box {
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}
+

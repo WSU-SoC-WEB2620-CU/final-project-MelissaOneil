@@ -1,1 +1,116 @@
 // Your styles go here
+@import "@fortawesome/fontawesome-free/css/all.css";
+$primary: #DFC9C7;
+$secondary: #C7A0A2;
+$danger: #DCD3CE;
+$info: #375163;
+$warning: #9BA796;
+$dk-green: #4A551B;
+@import "bootstrap/scss/bootstrap";
+
+
+@font-face {
+  font-family: 'ILoveGlitter';
+  src: url('../fonts/ILoveGlitter-TTF.ttf') format('truetype'),
+    url('../fonts/ILoveGlitter-OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LindenHill';
+  src: url('../fonts/LindenHill-Regular.ttf') format('truetype'),
+    url('../fonts/LindenHill-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BirthstoneBounce';
+  src: url('../fonts/BirthstoneBounce-Regular.ttf') format('truetype'),
+    url('../fonts/BirthstoneBounce-Medium.ttf') format('truetype');
+}
+
+@mixin buttonStyle {
+  background-color: $dk-green;
+  color: $primary;
+  font-size: 1.8rem;
+  width: 13rem;
+  padding-top: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@mixin main-box-style {
+  font-family: 'LindenHill';
+  box-sizing: border-box;
+  border: 11px solid #C7A0A2;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  padding: 40px;
+  margin: 0 auto;
+  width: 70%;  
+  align-items: center;
+}
+@mixin line-break {
+  width: 40%;
+  height: 3px;
+  background-color: $dk-green;
+  border: 2px solid $dk-green;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+@mixin row-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+body {
+  background-color: $primary;
+  color: $primary;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+nav {  
+  border-bottom: 2px solid $info;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .nav-link {
+    font-size: 1.3rem;
+    &:hover {
+      color: $info;
+    }
+  }
+
+  #navName {
+    font-family: 'BirthstoneBounce';
+    font-size: 4rem;
+    color: $info;
+  }
+}
+
+footer{  
+  border-top: 2px solid $info;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+
+  .footer-text {
+    font-family: 'ILoveGlitter';
+    font-size: 3rem;
+    color: $info;
+  }
+}
+
+
+
+@import "_index";
+@import "_gallery";
+@import "_schedule";
+@import "_venue";
+@import "_rsvp";
+@import "_gifts";
