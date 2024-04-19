@@ -89,7 +89,6 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   .nav-link {
@@ -117,7 +116,28 @@ footer {
     color: $info;
   }
 }
+@media only screen and (max-width: 600px) {
+  nav{
+  #navName {
+    font-family: 'BirthstoneBounce';
+    font-size: 2rem;
+  }
+  .nav-link {
+    font-size: .8rem;
 
+    &:hover {
+      color: $info;
+    }
+  }
+}
+footer {
+  .footer-text {
+    font-family: 'ILoveGlitter';
+    font-size: 1.5rem;
+  }
+}
+}
+  
 
 
 @import "_index";
