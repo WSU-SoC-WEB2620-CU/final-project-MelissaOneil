@@ -116,33 +116,36 @@ footer {
     color: $info;
   }
 }
-@media only screen and (max-width: 600px) {
-  nav{
-  #navName {
-    font-family: 'BirthstoneBounce';
-    font-size: 2rem;
-  }
-  .nav-link {
-    font-size: .8rem;
 
-    &:hover {
-      color: $info;
+@media only screen and (max-width: 600px) {
+  nav {
+    #navName {
+      font-family: 'BirthstoneBounce';
+      font-size: 2rem;
+    }
+
+    .nav-link {
+      font-size: .8rem;
+
+      &:hover {
+        color: $info;
+      }
+    }
+  }
+
+  footer {
+    .footer-text {
+      font-family: 'ILoveGlitter';
+      font-size: 1.5rem;
+    }
+
+    .small {
+      font-size: .6rem;
+
     }
   }
 }
-footer {
-  .footer-text {
-    font-family: 'ILoveGlitter';
-    font-size: 1.5rem;
-  }
-  
-  .small{
-    font-size: .6rem;
-  
-  }
-}
-}
-  
+
 
 
 @import "_index";
